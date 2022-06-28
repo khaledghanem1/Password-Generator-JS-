@@ -18,7 +18,7 @@ function writePassword() {
 // Creating a function & making sure it follows the instruction of the first prompt
 function generatePassword() {
   let passwordLength = prompt(
-    "Choose a password legnth thats at least 8 letter and max 128"
+    "Choose a password length that's at least 8 letters and max 128 letters"
   );
   // If statement stating that user must chose a number >= 8 <=128
   if (passwordLength >= 8 && passwordLength <= 128) {
@@ -30,23 +30,23 @@ function generatePassword() {
     var possible = "";
     // A confirm if the user would want to have a lower case in the password
     let lowerCase = confirm(
-      "Select ok if you would like to include a lower case? "
+      "Select 'OK' if you would like to include a lower case letters? "
     );
     // A confirm if the user would want to have a upper case in the password
     let upperCase = confirm(
-      "Select ok if you would like to include a  upper case"
+      "Select 'OK' if you would like to include a  upper case letters"
     );
     // A confirm if the user would want to have a special character in the password
     let specialCharacter = confirm(
-      "Select ok if you would like to include specail characters? "
+      "Select 'OK' if you would like to include special characters?"
     );
     // A confirm if the user would want to have a number in the password
     let number = confirm(
-      "Select ok if you would like to use numbers in your password "
+      "Select 'OK' if you would like to use numbers in your password"
     );
     // Making sure that the user must at least select a character type
     if (lowerCase || upperCase || specialCharacter || number) {
-      console.log("At least one chracter type is selected");
+      console.log("At least one character type is selected");
       // If the user selects lower case, random generator would use this information to generate the password
       if (lowerCase === true) {
         console.log("Lower case");
